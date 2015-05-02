@@ -42,8 +42,7 @@
         e.preventDefault();
 
     };
-
-    $( "form" ).on( "submit",submitAjaxRequest);
+    
     $('*[data-click-submits-form]').on('change',function(){
         $(this).closest('form').submit();
     });
