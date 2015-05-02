@@ -17,11 +17,14 @@ elixir(function(mix) {
     mix.scripts([
         'pubsub.js',
         'app.js',
+        'vendor/bootstrapSwitch.js',
         'ajax-helpers.js'
+
     ],null,'public/js')
 
     mix.styles([
         'vendor/bootstrap.min.css',
-        'app.css'
+        'app.css',
+        'vendor/bootstrapSwitch.css'
     ],null,'public/css')
 });

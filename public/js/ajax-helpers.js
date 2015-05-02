@@ -11,13 +11,16 @@
             success:function(){
                 $.publish('form.submitted');
             }
-        });
+        })
 
         e.preventDefault();
 
     };
 
-    $('*[data-click-submits-form]').on('change',function(){
+    $( "form" ).on( "submit",submitAjaxRequest);
+    $("*[data-click-submits-form]").bootstrapSwitch();
+    
+    $('*[data-click-submits-form]').on('switchChange.bootstrapSwitch',function(){
         $(this).closest('form').submit();
     });
 
