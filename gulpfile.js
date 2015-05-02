@@ -15,9 +15,9 @@ elixir(function(mix) {
     mix.sass('app.scss');
 
     mix.scripts([
+        'vendor/bootstrapSwitch.js',
         'pubsub.js',
         'app.js',
-        'vendor/bootstrapSwitch.js',
         'ajax-helpers.js'
 
     ],null,'public/js')

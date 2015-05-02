@@ -17,9 +17,8 @@
 
     };
 
-    $( "form" ).on( "submit",submitAjaxRequest);
-    $("*[data-click-submits-form]").bootstrapSwitch();
-    
+    $( "form[data-remote]" ).on( "submit",submitAjaxRequest);
+
     $('*[data-click-submits-form]').on('switchChange.bootstrapSwitch',function(){
         $(this).closest('form').submit();
     });
